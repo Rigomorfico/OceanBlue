@@ -1,0 +1,475 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #92C5FC;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%23f9f9f9' fill-opacity='0.09' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+/* REDES SOCIALES STICKY */
+.barra-flotante {
+    float: left;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-decoration: none;
+    padding-top: 10px;
+    /*border: solid 1px #4DC247;*/
+    background-color: none;
+    position: fixed;
+    top: 260px;
+    left: 0px;
+    transition: all 300ms ease 0ms;
+}
+
+.barra-flotante a img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.barra-flotante a img:hover{
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 600px) {
+    .barra-flotante {
+        font-size: 14px;
+        padding: 12px 20px;
+        bottom: 20px;
+        right: 20px;
+    }
+} 
+
+.bienvenida{
+    font-family: 'Muli';
+}
+
+.bienvenida b{
+    font-family: 'Poppins', sans-serif;
+    -webkit-text-stroke: 0.5px dodgerblue;
+    color: #FFFFFF;/*F2F3F4*/
+    font-size: 22px;
+}
+
+/* SECCION DE MISION Y VISION */
+.bFont{
+    margin-left: 25px;
+    font-size:25px;
+}
+
+.pFont{
+    color: #000000;
+    font-size:18px;
+    margin-left:50px;
+    margin-right:50px;
+    text-align:justify;
+}
+
+#MV{
+    font-size: 25px;
+    border-radius: 5px;
+    padding: 5px;
+    color: dodgerblue;
+    background-color: #FFFFFF;/*#F2F3F4 85C1E9*/
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+/* SECCION DE TRABAJOS QUE SE PUEDEN REALIZAR F2F3F4*/
+#trabajos {
+    color:#85C1E9;
+    font-size:20px;
+    height:auto; /*180px*/
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#trabajos h4{
+    -webkit-text-stroke: 0.5px dodgerblue;
+    color: #FFFFFF;/*F2F3F4*/
+    font-size: 30px;
+}
+
+.tdt {
+    font-weight: none;
+    color: #1A63E6;
+}
+
+.tdd {
+    color: #333333;
+    font-size: 16px;
+}
+
+#trabajos img {
+    width: 50px;
+    height: 50px;
+}
+
+/*INICIO ODOMETRO ANIMADO*/
+.contadores_principal {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #6495ED;
+    color: #F2F3F4;
+}
+
+.contadores_principal h2{
+    font-size: 18px;
+}
+
+.contadores_principal img{
+    width: 51px;
+    height: 51px;
+}
+
+.contador {
+    width: 24%;
+    text-align: center;
+    display: inline-block;
+}
+
+.contador_cantidad {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: 900;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.ocultar {
+    opacity: 0;
+}
+
+.animar {
+    animation: aparecer 1.3s;
+}
+
+/*Final animación*/     /*FINAL ODOMETRO ANIMADO*/
+
+/* POR QUE ELEGIR OCEAN BULUE ESTILO
+#mensaje{
+    height: auto; 
+    font-family: 'Muli';
+    text-align: center;
+}
+
+#mensaje b{
+    -webkit-text-stroke: 0.8px dodgerblue;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#mensaje p{
+    color: #000000;
+    margin-top: 20px;
+    font-size:20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align:justify;
+}
+
+#mensaje img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    width: 500px;
+    height: 300px;
+}*/
+
+#contenedor {
+    width: 100%;
+    height: auto;
+}
+
+#contenedor b{
+    -webkit-text-stroke: 1px dodgerblue;
+    color: #FFFFFF;/*F2F3F4*/
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#naranja {
+  background-color: none;
+  height: auto;
+}
+
+#naranja img{
+    width: 500px;
+    height: 300px;
+}
+
+#verde {
+  background-color: none;
+  height: auto;
+}
+
+#verde p{
+    color: #000000;
+    margin-left: 5%;
+    font-size:20px;
+    font-family: 'Muli';
+}
+
+/* SECCION DE BANNERS ANIMADOS*/
+.base{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.cb1{
+    max-width: 600px;
+}
+
+.cb2{
+    max-width: 600px;
+}
+
+.cb2 h4{
+    font-size: 25px;
+    color: rgb(10,35,100);
+}
+
+/* LLAMADA A LA ACCION CATALOGO */
+.callCatalogo {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: auto;
+    background-color: none;
+    text-align: center;
+}
+.callCatalogo b{
+    font-size: 24px;
+    -webkit-text-stroke: 0.7px dodgerblue;
+    color: #FFFFFF;/*F2F3F4*/
+}
+
+.callCatalogo p{
+    color: #333333;
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.callCatalogo a{
+    text-decoration: none;
+    color: #333333;
+}
+
+/* FOOTER RESPONSIVE */
+footer {
+    width: 100%;
+    background-color: #1E90FF;
+    color: #FFFFFF;
+    /*padding: 40px;*/
+}
+
+footer a:hover{
+    opacity: 0.6;
+}
+
+.container-footer-all {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    padding-bottom: 10px;
+}
+
+.container-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column1 {
+    max-width: 400px;
+
+}
+
+.column1 h1 {
+    font-size: 22px;
+}
+
+.column1 p {
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.column2 {
+    max-width: 400px;
+
+}
+
+.column2 h1{
+    font-size: 22px;
+}
+
+.row1 {
+    margin-top: 20px;
+    display: flex;
+}
+
+.row1 img {
+    width: 36px;
+    height: 36px;
+}
+
+.row1 label {
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white; /*C7C7C7*/
+}
+
+.row1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.column3 {
+    max-width: 400px;
+}
+
+.column3 h1 {
+    font-size: 22px;
+}
+
+.row2 {
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.row2 img {
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label {
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer {
+    width: 100%;
+    background-color: #101010;
+    padding: 20px;
+    
+}
+
+.footer {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.copyright {
+    color: #FFFFFF;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 1100px) {
+    .container-body {
+        flex-wrap: wrap;
+    }
+
+    .column1{
+        max-width: 100%;
+    }
+
+    .column2, .column3 {
+        margin-top: 40px;
+    }
+}
+
+/* Estilos Sticky buttons */
+#wsSticky {
+    position: fixed;
+    bottom: 65px;
+    right: 20px;
+    transition: all 300ms ease 0ms;
+    /*box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);*/
+    z-index: 99;
+}
+
+#wsSticky img{
+    width: 40px;
+    height: 40px;
+}
+
+#wsSticky:hover {
+    opacity: 0.9;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
+}
+
+/*Ancla de inicio*/
+#BI{
+    position: fixed;
+    bottom: 65px;
+    right: 70px;
+    transition: all 300ms ease 0ms;
+    /*box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);*/
+    z-index: 99;
+}
+
+#BI img {
+    width: 40px;
+    height: 40px;
+}
+
+#BI:hover{
+    opacity: 0.9;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
+}
+
+@media only screen and (max-width: 600px) {
+    #wsSticky {
+        padding: 12px 20px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    #BI {
+        padding: 12px 20px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
